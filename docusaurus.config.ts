@@ -8,14 +8,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://YOUR_GITHUB_USERNAME.github.io',
+  url: 'https://salwagull.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/physical-AI-and-humanoid-robotics/',
+  baseUrl: '/Physical-AI-Humanoid-Robotics/',
 
   // GitHub pages deployment config.
-  organizationName: 'YOUR_GITHUB_USERNAME', // Usually your GitHub org/user name.
-  projectName: 'physical-AI-and-humanoid-robotics', // Usually your repo name.
+  organizationName: 'Salwagull', // Usually your GitHub org/user name.
+  projectName: 'Physical-AI-Humanoid-Robotics', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -38,7 +38,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/YOUR_GITHUB_USERNAME/physical-AI-and-humanoid-robotics/tree/main/',
+            'https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/',
         },
         blog: false,
         theme: {
@@ -65,7 +65,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/YOUR_GITHUB_USERNAME/physical-AI-and-humanoid-robotics',
+          href: 'https://github.com/Salwagull/Physical-AI-Humanoid-Robotics',
           label: 'GitHub',
           position: 'right',
         },
@@ -109,7 +109,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/YOUR_GITHUB_USERNAME/physical-AI-and-humanoid-robotics',
+              href: 'https://github.com/Salwagull/Physical-AI-Humanoid-Robotics',
             },
           ],
         },
