@@ -1,0 +1,174 @@
+<?xml version="1.0" ?>
+<!--
+Simple Gazebo World with Robot
+
+This world includes:
+- Ground plane
+- Directional lighting (sun)
+- Box obstacles
+- The simple differential drive robot
+
+Usage:
+  gz sim simple_world.sdf
+
+Author: Physical AI & Humanoid Robotics Book
+-->
+<sdf version="1.8">
+  <world name="simple_world">
+
+    <!-- ========== PHYSICS CONFIGURATION ========== -->
+    <physics name="1ms" type="ode">
+      <!-- Real-time factor: 1.0 = real-time, >1.0 = faster than real-time -->
+      <real_time_factor>1.0</real_time_factor>
+      <!-- Time step: smaller = more accurate, but slower -->
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- ========== SCENE SETTINGS ========== -->
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <!-- ========== LIGHTING ========== -->
+    <!-- Sun: directional light from above -->
+    <light type="directional" name="sun">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.5 0.5 0.5 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+      <cast_shadows>true</cast_shadows>
+    </light>
+
+    <!-- ========== GROUND PLANE ========== -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.6 0.6 0.6 1</ambient>
+            <diffuse>0.6 0.6 0.6 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ========== OBSTACLES ========== -->
+
+    <!-- Red box obstacle -->
+    <model name="box1">
+      <pose>3 0 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Green cylinder obstacle -->
+    <model name="cylinder1">
+      <pose>-2 2 0.5 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>1.0</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.5</radius>
+              <length>1.0</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Yellow sphere obstacle -->
+    <model name="sphere1">
+      <pose>2 -2 0.3 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>0.3</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>0.3</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ========== ROBOT ========== -->
+    <!-- Include the simple differential drive robot -->
+    <include>
+      <uri>file://simple_robot.sdf</uri>
+      <pose>0 0 0.15 0 0 0</pose>
+    </include>
+
+    <!-- ========== GAZEBO PLUGINS ========== -->
+    <!-- Scene broadcaster (publishes scene info) -->
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+
+    <!-- User commands (keyboard/mouse control in GUI) -->
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+
+  </world>
+</sdf>
