@@ -1,0 +1,15 @@
+{
+  "id": "assets/simulation_diagrams/README",
+  "title": "Simulation Diagrams",
+  "description": "This directory contains diagrams and visual aids for robot simulation concepts covered in Chapters 4-5.",
+  "source": "@site/docs/assets/simulation_diagrams/README.md",
+  "sourceDirName": "assets/simulation_diagrams",
+  "slug": "/assets/simulation_diagrams/",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/assets/simulation_diagrams/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/assets/simulation_diagrams/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

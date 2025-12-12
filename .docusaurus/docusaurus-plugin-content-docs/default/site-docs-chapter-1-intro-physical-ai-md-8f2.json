@@ -1,0 +1,27 @@
+{
+  "id": "chapter1_intro_physical_ai",
+  "title": "Chapter 1: Introduction to Physical AI",
+  "description": "Introduction",
+  "source": "@site/docs/chapter1_intro_physical_ai.md",
+  "sourceDirName": ".",
+  "slug": "/chapter1_intro_physical_ai",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter1_intro_physical_ai",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter1_intro_physical_ai.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to Physical AI & Humanoid Robotics",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/intro"
+  },
+  "next": {
+    "title": "Chapter 2: Embodied Intelligence and Robot Interaction",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter2_embodied_intelligence"
+  }
+}

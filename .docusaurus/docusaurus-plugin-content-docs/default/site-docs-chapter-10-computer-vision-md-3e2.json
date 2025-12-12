@@ -1,0 +1,40 @@
+{
+  "id": "chapter10_computer_vision",
+  "title": "Chapter 10: Computer Vision for Robotics",
+  "description": "Master computer vision techniques for robotic perception including image processing, feature detection, depth estimation, and 3D reconstruction",
+  "source": "@site/docs/chapter10_computer_vision.md",
+  "sourceDirName": ".",
+  "slug": "/chapter10_computer_vision",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter10_computer_vision",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter10_computer_vision.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10,
+    "title": "Chapter 10: Computer Vision for Robotics",
+    "description": "Master computer vision techniques for robotic perception including image processing, feature detection, depth estimation, and 3D reconstruction",
+    "keywords": [
+      "computer vision",
+      "robotics",
+      "opencv",
+      "perception",
+      "image processing",
+      "depth estimation",
+      "3d reconstruction",
+      "ros2",
+      "camera calibration"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 9: LLM Planning and Voice Commands",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter9_llm_voice_commands"
+  },
+  "next": {
+    "title": "Chapter 11: 3D Perception & Depth Sensing",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter11_3d_perception"
+  }
+}

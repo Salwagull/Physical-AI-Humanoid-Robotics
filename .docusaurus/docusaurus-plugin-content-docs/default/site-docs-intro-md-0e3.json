@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Welcome to Physical AI & Humanoid Robotics",
+  "description": "Welcome to this comprehensive guide on Physical AI and Humanoid Robotics! This book will take you from foundational concepts to building advanced robotic systems that can perceive, reason, and act in the physical world.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Chapter 1: Introduction to Physical AI",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter1_intro_physical_ai"
+  }
+}

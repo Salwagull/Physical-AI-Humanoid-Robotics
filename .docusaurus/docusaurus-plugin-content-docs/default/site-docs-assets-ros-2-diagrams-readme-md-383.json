@@ -1,0 +1,15 @@
+{
+  "id": "assets/ros2_diagrams/README",
+  "title": "ROS 2 Diagrams",
+  "description": "This directory contains diagrams and visual aids for ROS 2 concepts covered in Chapter 3: ROS 2 Basics.",
+  "source": "@site/docs/assets/ros2_diagrams/README.md",
+  "sourceDirName": "assets/ros2_diagrams",
+  "slug": "/assets/ros2_diagrams/",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/assets/ros2_diagrams/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/assets/ros2_diagrams/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

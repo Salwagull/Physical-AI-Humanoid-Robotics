@@ -1,0 +1,15 @@
+{
+  "id": "assets/vla_diagrams/README",
+  "title": "VLA (Vision-Language-Action) Diagrams",
+  "description": "This directory contains diagrams for Vision-Language-Action systems from Chapters 8-9.",
+  "source": "@site/docs/assets/vla_diagrams/README.md",
+  "sourceDirName": "assets/vla_diagrams",
+  "slug": "/assets/vla_diagrams/",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/assets/vla_diagrams/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/assets/vla_diagrams/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

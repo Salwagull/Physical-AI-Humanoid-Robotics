@@ -1,0 +1,24 @@
+{
+  "id": "chapter7_isaac_perception_nav",
+  "title": "Chapter 7: Isaac Sim for Perception and Navigation",
+  "description": "Learning Objectives",
+  "source": "@site/docs/chapter7_isaac_perception_nav.md",
+  "sourceDirName": ".",
+  "slug": "/chapter7_isaac_perception_nav",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter7_isaac_perception_nav",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter7_isaac_perception_nav.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 6: Introduction to NVIDIA Isaac Sim & Machine Learning for Physical AI",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter6_intro_isaac_sim"
+  },
+  "next": {
+    "title": "Chapter 8: Vision-Language-Action Systems",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter8_vla_systems"
+  }
+}

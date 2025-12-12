@@ -1,0 +1,24 @@
+{
+  "id": "chapter6_intro_isaac_sim",
+  "title": "Chapter 6: Introduction to NVIDIA Isaac Sim & Machine Learning for Physical AI",
+  "description": "Learning Objectives",
+  "source": "@site/docs/chapter6_intro_isaac_sim.md",
+  "sourceDirName": ".",
+  "slug": "/chapter6_intro_isaac_sim",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter6_intro_isaac_sim",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter6_intro_isaac_sim.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 5: Unity for Robotics Simulation",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter5_unity_simulation"
+  },
+  "next": {
+    "title": "Chapter 7: Isaac Sim for Perception and Navigation",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter7_isaac_perception_nav"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "assets/isaac_sim_diagrams/README",
+  "title": "Isaac Sim Diagrams",
+  "description": "This directory contains diagrams for NVIDIA Isaac Sim architecture, perception, and navigation from Chapters 6-7.",
+  "source": "@site/docs/assets/isaac_sim_diagrams/README.md",
+  "sourceDirName": "assets/isaac_sim_diagrams",
+  "slug": "/assets/isaac_sim_diagrams/",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/assets/isaac_sim_diagrams/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/assets/isaac_sim_diagrams/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

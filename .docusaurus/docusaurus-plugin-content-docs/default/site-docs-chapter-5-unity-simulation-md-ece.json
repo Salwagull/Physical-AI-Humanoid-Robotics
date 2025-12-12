@@ -1,0 +1,27 @@
+{
+  "id": "chapter5_unity_simulation",
+  "title": "Chapter 5: Unity for Robotics Simulation",
+  "description": "Introduction",
+  "source": "@site/docs/chapter5_unity_simulation.md",
+  "sourceDirName": ".",
+  "slug": "/chapter5_unity_simulation",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter5_unity_simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter5_unity_simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 4: Gazebo for Robot Simulation",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter4_gazebo_simulation"
+  },
+  "next": {
+    "title": "Chapter 6: Introduction to NVIDIA Isaac Sim & Machine Learning for Physical AI",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter6_intro_isaac_sim"
+  }
+}

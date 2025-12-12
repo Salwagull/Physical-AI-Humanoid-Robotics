@@ -1,0 +1,39 @@
+{
+  "id": "chapter9_llm_voice_commands",
+  "title": "Chapter 9: LLM Planning and Voice Commands",
+  "description": "Integrate LLMs for task planning and build voice-controlled robot systems with speech recognition",
+  "source": "@site/docs/chapter9_llm_voice_commands.md",
+  "sourceDirName": ".",
+  "slug": "/chapter9_llm_voice_commands",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter9_llm_voice_commands",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter9_llm_voice_commands.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9,
+    "title": "Chapter 9: LLM Planning and Voice Commands",
+    "description": "Integrate LLMs for task planning and build voice-controlled robot systems with speech recognition",
+    "keywords": [
+      "llm",
+      "voice commands",
+      "speech recognition",
+      "whisper",
+      "openai",
+      "ollama",
+      "task planning",
+      "ros2"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 8: Vision-Language-Action Systems",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter8_vla_systems"
+  },
+  "next": {
+    "title": "Chapter 10: Computer Vision for Robotics",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter10_computer_vision"
+  }
+}

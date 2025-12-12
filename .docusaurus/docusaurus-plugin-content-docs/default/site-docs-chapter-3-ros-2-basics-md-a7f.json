@@ -1,0 +1,27 @@
+{
+  "id": "chapter3_ros2_basics",
+  "title": "Chapter 3: ROS 2 Basics - Nodes, Topics, Services",
+  "description": "Introduction",
+  "source": "@site/docs/chapter3_ros2_basics.md",
+  "sourceDirName": ".",
+  "slug": "/chapter3_ros2_basics",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter3_ros2_basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter3_ros2_basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2: Embodied Intelligence and Robot Interaction",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter2_embodied_intelligence"
+  },
+  "next": {
+    "title": "Chapter 4: Gazebo for Robot Simulation",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter4_gazebo_simulation"
+  }
+}

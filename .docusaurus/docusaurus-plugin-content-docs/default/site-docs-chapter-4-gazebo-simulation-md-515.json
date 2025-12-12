@@ -1,0 +1,27 @@
+{
+  "id": "chapter4_gazebo_simulation",
+  "title": "Chapter 4: Gazebo for Robot Simulation",
+  "description": "Introduction",
+  "source": "@site/docs/chapter4_gazebo_simulation.md",
+  "sourceDirName": ".",
+  "slug": "/chapter4_gazebo_simulation",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter4_gazebo_simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter4_gazebo_simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 3: ROS 2 Basics - Nodes, Topics, Services",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter3_ros2_basics"
+  },
+  "next": {
+    "title": "Chapter 5: Unity for Robotics Simulation",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter5_unity_simulation"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "chapter11_3d_perception",
+  "title": "Chapter 11: 3D Perception & Depth Sensing",
+  "description": "Master 3D perception technologies including depth cameras, LiDAR, point cloud processing, and spatial understanding for robotic applications",
+  "source": "@site/docs/chapter11_3d_perception.md",
+  "sourceDirName": ".",
+  "slug": "/chapter11_3d_perception",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter11_3d_perception",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter11_3d_perception.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11,
+    "title": "Chapter 11: 3D Perception & Depth Sensing",
+    "description": "Master 3D perception technologies including depth cameras, LiDAR, point cloud processing, and spatial understanding for robotic applications",
+    "keywords": [
+      "3d perception",
+      "depth sensing",
+      "lidar",
+      "point cloud",
+      "rgb-d",
+      "realsense",
+      "spatial understanding",
+      "ros2",
+      "pcl",
+      "open3d"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 10: Computer Vision for Robotics",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter10_computer_vision"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/Physical-AI-Humanoid-Robotics/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/Physical-AI-Humanoid-Robotics/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "assets/isaac_sim_diagrams/README",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/assets/isaac_sim_diagrams/"
+            },
+            {
+              "id": "assets/physical_ai_diagrams/README",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/assets/physical_ai_diagrams/"
+            },
+            {
+              "id": "assets/ros2_diagrams/README",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/assets/ros2_diagrams/"
+            },
+            {
+              "id": "assets/simulation_diagrams/README",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/assets/simulation_diagrams/"
+            },
+            {
+              "id": "assets/vla_diagrams/README",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/assets/vla_diagrams/"
+            },
+            {
+              "id": "chapter1_intro_physical_ai",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter1_intro_physical_ai",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter10_computer_vision",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter10_computer_vision",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter11_3d_perception",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter11_3d_perception",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter2_embodied_intelligence",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter2_embodied_intelligence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter3_ros2_basics",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter3_ros2_basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter4_gazebo_simulation",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter4_gazebo_simulation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter5_unity_simulation",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter5_unity_simulation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter6_intro_isaac_sim",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter6_intro_isaac_sim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter7_isaac_perception_nav",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter7_isaac_perception_nav",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter8_vla_systems",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter8_vla_systems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "chapter9_llm_voice_commands",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/chapter9_llm_voice_commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/Physical-AI-Humanoid-Robotics/docs/intro",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/Physical-AI-Humanoid-Robotics/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

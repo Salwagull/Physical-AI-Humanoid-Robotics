@@ -1,0 +1,41 @@
+{
+  "id": "chapter8_vla_systems",
+  "title": "Chapter 8: Vision-Language-Action Systems",
+  "description": "Build VLA systems combining computer vision, natural language processing, and action planning for intelligent robot control",
+  "source": "@site/docs/chapter8_vla_systems.md",
+  "sourceDirName": ".",
+  "slug": "/chapter8_vla_systems",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter8_vla_systems",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter8_vla_systems.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "title": "Chapter 8: Vision-Language-Action Systems",
+    "description": "Build VLA systems combining computer vision, natural language processing, and action planning for intelligent robot control",
+    "keywords": [
+      "vla",
+      "vision",
+      "language",
+      "action",
+      "yolo",
+      "object detection",
+      "nlp",
+      "spacy",
+      "robot control",
+      "ros2"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 7: Isaac Sim for Perception and Navigation",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter7_isaac_perception_nav"
+  },
+  "next": {
+    "title": "Chapter 9: LLM Planning and Voice Commands",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter9_llm_voice_commands"
+  }
+}

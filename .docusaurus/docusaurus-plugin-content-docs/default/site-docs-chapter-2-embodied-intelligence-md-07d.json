@@ -1,0 +1,27 @@
+{
+  "id": "chapter2_embodied_intelligence",
+  "title": "Chapter 2: Embodied Intelligence and Robot Interaction",
+  "description": "Introduction",
+  "source": "@site/docs/chapter2_embodied_intelligence.md",
+  "sourceDirName": ".",
+  "slug": "/chapter2_embodied_intelligence",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter2_embodied_intelligence",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter2_embodied_intelligence.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Introduction to Physical AI",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter1_intro_physical_ai"
+  },
+  "next": {
+    "title": "Chapter 3: ROS 2 Basics - Nodes, Topics, Services",
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/chapter3_ros2_basics"
+  }
+}

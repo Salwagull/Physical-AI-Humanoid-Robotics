@@ -1,0 +1,90 @@
+{
+  "/Physical-AI-Humanoid-Robotics/docs-c71": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/Physical-AI-Humanoid-Robotics/docs-cb5": {
+    "__comp": "a7bd4aaa",
+    "__props": "55eb410f"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs-f46": {
+    "__comp": "a94703ab"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/assets/isaac_sim_diagrams-8af": {
+    "__comp": "17896441",
+    "content": "daaa0894"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/assets/physical_ai_diagrams-34c": {
+    "__comp": "17896441",
+    "content": "7060e3d3"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/assets/ros2_diagrams-b3b": {
+    "__comp": "17896441",
+    "content": "383047be"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/assets/simulation_diagrams-bb4": {
+    "__comp": "17896441",
+    "content": "7c6cbecc"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/assets/vla_diagrams-62d": {
+    "__comp": "17896441",
+    "content": "50283f91"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter1_intro_physical_ai-e6e": {
+    "__comp": "17896441",
+    "content": "8f249fc6"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter10_computer_vision-dd4": {
+    "__comp": "17896441",
+    "content": "3e2da782"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter11_3d_perception-b50": {
+    "__comp": "17896441",
+    "content": "a993a32b"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter2_embodied_intelligence-765": {
+    "__comp": "17896441",
+    "content": "07d599e7"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter3_ros2_basics-be3": {
+    "__comp": "17896441",
+    "content": "a7f9f663"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter4_gazebo_simulation-3db": {
+    "__comp": "17896441",
+    "content": "51578e7b"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter5_unity_simulation-f3a": {
+    "__comp": "17896441",
+    "content": "ece97dab"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter6_intro_isaac_sim-fbf": {
+    "__comp": "17896441",
+    "content": "51e9a688"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter7_isaac_perception_nav-8f3": {
+    "__comp": "17896441",
+    "content": "c4449fbe"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter8_vla_systems-eae": {
+    "__comp": "17896441",
+    "content": "96dd371d"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/chapter9_llm_voice_commands-d6c": {
+    "__comp": "17896441",
+    "content": "3218074c"
+  },
+  "/Physical-AI-Humanoid-Robotics/docs/intro-60b": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/Physical-AI-Humanoid-Robotics/-6c1": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

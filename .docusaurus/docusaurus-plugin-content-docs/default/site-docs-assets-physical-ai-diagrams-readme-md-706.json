@@ -1,0 +1,15 @@
+{
+  "id": "assets/physical_ai_diagrams/README",
+  "title": "Physical AI Diagrams",
+  "description": "This directory contains diagrams and visual aids for Physical AI concepts covered in Chapters 1-2.",
+  "source": "@site/docs/assets/physical_ai_diagrams/README.md",
+  "sourceDirName": "assets/physical_ai_diagrams",
+  "slug": "/assets/physical_ai_diagrams/",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/assets/physical_ai_diagrams/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Salwagull/Physical-AI-Humanoid-Robotics/tree/main/docs/assets/physical_ai_diagrams/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}
