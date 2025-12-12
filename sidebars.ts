@@ -59,14 +59,14 @@ const sidebars: SidebarsConfig = {
         'chapter9_llm_voice_commands',
       ],
     },
-    // Capstone chapter will be added when created
-    // {
-    //   type: 'category',
-    //   label: 'Capstone Project',
-    //   items: [
-    //     'chapter10_capstone_project',
-    //   ],
-    // },
+    {
+      type: 'category',
+      label: 'Part 6: Perception & Vision',
+      items: [
+        'chapter10_computer_vision',
+        'chapter11_3d_perception',
+      ],
+    },
   ],
 };
 

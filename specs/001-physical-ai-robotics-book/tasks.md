@@ -139,7 +139,31 @@ description: "Task list template for feature implementation"
 
 ---
 
-## Phase 8: Capstone Project
+## Phase 8: Computer Vision (Added Chapter)
+
+**Goal**: Students master computer vision techniques for robotic perception.
+
+**Independent Test**: Students can implement camera calibration, feature detection, depth estimation, and visual odometry.
+
+### Implementation for Computer Vision
+
+- [X] T035a [P] Draft Chapter 10: Computer Vision for Robotics in `docs/chapter10_computer_vision.md`
+
+---
+
+## Phase 8b: 3D Perception & Depth Sensing (Added Chapter)
+
+**Goal**: Students master 3D perception technologies including depth cameras, LiDAR, and point cloud processing.
+
+**Independent Test**: Students can work with RGB-D cameras, process point clouds, and build spatial maps.
+
+### Implementation for 3D Perception
+
+- [X] T035b [P] Draft Chapter 11: 3D Perception & Depth Sensing in `docs/chapter11_3d_perception.md`
+
+---
+
+## Phase 9: Capstone Project
 
 **Goal**: Students build a simulated humanoid robot performing navigation, perception, and object manipulation based on voice commands.
 
@@ -147,7 +171,7 @@ description: "Task list template for feature implementation"
 
 ### Implementation for Capstone Project
 
-- [ ] T035 [P] Draft Chapter 10: Building the Humanoid Robot Capstone in `docs/chapter10_capstone_project.md`
+- [ ] T035 [P] Draft Chapter 11: Building the Humanoid Robot Capstone in `docs/chapter11_capstone_project.md`
 - [ ] T036 Develop integrated capstone project code (combining ROS 2, Isaac Sim, VLA) in `code/capstone_project/`
 - [ ] T037 Verify end-to-end capstone functionality against success criteria from spec.
 

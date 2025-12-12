@@ -1,0 +1,104 @@
+.container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  transition: transform 0.15s ease-out;
+  animation: float var(--animation-duration, 20s) ease-in-out infinite;
+}
+
+/* Circle */
+.circle {
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, var(--shape-color) 0%, transparent 70%);
+  box-shadow: 0 0 40px var(--shape-color);
+}
+
+/* Square */
+.square {
+  background: linear-gradient(135deg, var(--shape-color) 0%, transparent 70%);
+  border: 1px solid var(--shape-color);
+  animation: float var(--animation-duration, 20s) ease-in-out infinite, rotate 30s linear infinite;
+}
+
+/* Triangle */
+.triangle {
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  border-left: calc(var(--size, 40px) / 2) solid transparent;
+  border-right: calc(var(--size, 40px) / 2) solid transparent;
+  border-bottom: var(--size, 40px) solid var(--shape-color);
+  filter: drop-shadow(0 0 20px var(--shape-color));
+  animation: float var(--animation-duration, 20s) ease-in-out infinite, rotateTriangle 25s linear infinite;
+}
+
+/* Hexagon */
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: linear-gradient(180deg, var(--shape-color) 0%, transparent 100%);
+  animation: float var(--animation-duration, 20s) ease-in-out infinite, pulse 4s ease-in-out infinite;
+}
+
+/* Ring */
+.ring {
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--shape-color);
+  box-shadow:
+    0 0 20px var(--shape-color),
+    inset 0 0 20px var(--shape-color);
+  animation: float var(--animation-duration, 20s) ease-in-out infinite, ringPulse 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-25px) rotate(2deg);
+  }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateTriangle {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.1); }
+}
+
+@keyframes ringPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--shape-color), inset 0 0 20px var(--shape-color);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 40px var(--shape-color), inset 0 0 40px var(--shape-color);
+    transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shape {
+    opacity: 0.1 !important;
+  }
+}

@@ -1,0 +1,498 @@
+/**
+ * Advanced 3D Robot Component Styles
+ * Features: 3D transforms, holographic effects, interactive animations
+ */
+
+.robotContainer {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+/* Holographic Rings */
+.holoRing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: holoSpin 20s linear infinite;
+  pointer-events: none;
+}
+
+.ringOuter,
+.ringMiddle,
+.ringInner {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  animation: ringPulse 3s ease-in-out infinite;
+}
+
+.ringOuter {
+  width: 380px;
+  height: 380px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(75deg);
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow:
+    0 0 20px rgba(99, 102, 241, 0.3),
+    inset 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+.ringMiddle {
+  width: 320px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(75deg) rotateZ(45deg);
+  border-color: rgba(6, 182, 212, 0.3);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+  animation-delay: -1s;
+}
+
+.ringInner {
+  width: 260px;
+  height: 260px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(75deg) rotateZ(-45deg);
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+  animation-delay: -2s;
+}
+
+@keyframes holoSpin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+@keyframes ringPulse {
+  0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) rotateX(75deg) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) rotateX(75deg) scale(1.05); }
+}
+
+/* Robot Body */
+.robotBody {
+  position: relative;
+  width: 200px;
+  height: 320px;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+}
+
+/* Robot Head */
+.robotHead {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 80px;
+  background: linear-gradient(180deg, #2d3748 0%, #1a202c 100%);
+  border-radius: 20px 20px 10px 10px;
+  border: 2px solid rgba(99, 102, 241, 0.5);
+  box-shadow:
+    0 0 30px rgba(99, 102, 241, 0.3),
+    inset 0 -10px 20px rgba(0, 0, 0, 0.3);
+  animation: headFloat 4s ease-in-out infinite;
+}
+
+@keyframes headFloat {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Visor */
+.visor {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 35px;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 8px;
+  border: 1px solid rgba(99, 102, 241, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.eyeLeft,
+.eyeRight {
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #06b6d4 0%, #0891b2 50%, #0e7490 100%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 10px #06b6d4,
+    0 0 20px rgba(6, 182, 212, 0.5),
+    inset 0 0 5px rgba(255, 255, 255, 0.3);
+  animation: eyeGlow 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyeRight {
+  animation-delay: -1s;
+}
+
+.eyePupil {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  animation: pupilMove 5s ease-in-out infinite;
+}
+
+@keyframes eyeGlow {
+  0%, 100% { box-shadow: 0 0 10px #06b6d4, 0 0 20px rgba(6, 182, 212, 0.5); }
+  50% { box-shadow: 0 0 20px #06b6d4, 0 0 40px rgba(6, 182, 212, 0.8); }
+}
+
+@keyframes pupilMove {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(2px, 1px); }
+  50% { transform: translate(-1px, -1px); }
+  75% { transform: translate(1px, -1px); }
+}
+
+.scanLine {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.8), transparent);
+  animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Antenna */
+.antenna {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 25px;
+  background: linear-gradient(180deg, #4b5563 0%, #374151 100%);
+  border-radius: 2px;
+}
+
+.antennaOrb {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, #f472b6 0%, #ec4899 50%, #db2777 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ec4899, 0 0 30px rgba(236, 72, 153, 0.5);
+  animation: antennaPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes antennaPulse {
+  0%, 100% { transform: translateX(-50%) scale(1); box-shadow: 0 0 15px #ec4899; }
+  50% { transform: translateX(-50%) scale(1.3); box-shadow: 0 0 30px #ec4899, 0 0 50px rgba(236, 72, 153, 0.5); }
+}
+
+/* Robot Torso */
+.robotTorso {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 140px;
+  background: linear-gradient(180deg, #374151 0%, #1f2937 50%, #111827 100%);
+  border-radius: 15px 15px 25px 25px;
+  border: 2px solid rgba(99, 102, 241, 0.4);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    inset 0 -20px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Chest Plate */
+.chestPlate {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 50%;
+  border: 2px solid rgba(6, 182, 212, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Arc Reactor */
+.arcReactor {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reactorCore {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #ffffff 0%, #06b6d4 30%, #0891b2 60%, #0e7490 100%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 20px #06b6d4,
+    0 0 40px rgba(6, 182, 212, 0.6),
+    0 0 60px rgba(6, 182, 212, 0.4);
+  animation: reactorPulse 2s ease-in-out infinite;
+}
+
+@keyframes reactorPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #06b6d4, 0 0 40px rgba(6, 182, 212, 0.6);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #06b6d4, 0 0 60px rgba(6, 182, 212, 0.8), 0 0 80px rgba(6, 182, 212, 0.4);
+  }
+}
+
+.reactorRing,
+.reactorRing2 {
+  position: absolute;
+  border: 2px solid rgba(6, 182, 212, 0.6);
+  border-radius: 50%;
+  animation: reactorRingSpin 8s linear infinite;
+}
+
+.reactorRing {
+  width: 40px;
+  height: 40px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.reactorRing2 {
+  width: 50px;
+  height: 50px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  animation-direction: reverse;
+  animation-duration: 6s;
+}
+
+@keyframes reactorRingSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Circuit Lines */
+.circuitLines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circuit {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.6), transparent);
+  animation: circuitFlow 3s ease-in-out infinite;
+}
+
+.circuit:nth-child(1) { left: 10px; top: 20%; width: 2px; height: 30px; }
+.circuit:nth-child(2) { right: 10px; top: 25%; width: 2px; height: 25px; }
+.circuit:nth-child(3) { left: 15px; top: 60%; width: 2px; height: 35px; }
+.circuit:nth-child(4) { right: 15px; top: 55%; width: 2px; height: 30px; }
+.circuit:nth-child(5) { left: 25px; top: 40%; width: 25px; height: 2px; }
+.circuit:nth-child(6) { right: 25px; top: 70%; width: 25px; height: 2px; }
+
+@keyframes circuitFlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Robot Arms */
+.armLeft,
+.armRight {
+  position: absolute;
+  top: 100px;
+  width: 25px;
+}
+
+.armLeft {
+  left: 10px;
+  transform: rotate(-15deg);
+  animation: armSwingLeft 4s ease-in-out infinite;
+}
+
+.armRight {
+  right: 10px;
+  transform: rotate(15deg);
+  animation: armSwingRight 4s ease-in-out infinite;
+}
+
+@keyframes armSwingLeft {
+  0%, 100% { transform: rotate(-15deg); }
+  50% { transform: rotate(-25deg); }
+}
+
+@keyframes armSwingRight {
+  0%, 100% { transform: rotate(15deg); }
+  50% { transform: rotate(25deg); }
+}
+
+.armSegment {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, #4b5563 0%, #374151 100%);
+  border-radius: 10px;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.armJoint {
+  width: 20px;
+  height: 20px;
+  margin: 2px auto;
+  background: radial-gradient(circle, #6366f1 0%, #4f46e5 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.forearm {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg, #374151 0%, #1f2937 100%);
+  border-radius: 8px;
+  position: relative;
+}
+
+.handGlow {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.8) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: handPulse 2s ease-in-out infinite;
+}
+
+@keyframes handPulse {
+  0%, 100% { opacity: 0.5; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.5); }
+}
+
+/* Data Points */
+.dataPoints {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.dataPoint {
+  position: absolute;
+  padding: 0.25rem 0.5rem;
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.5);
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  animation: dataFloat 5s ease-in-out infinite;
+  opacity: 0;
+}
+
+.dataPoint:nth-child(odd) {
+  animation-direction: reverse;
+}
+
+@keyframes dataFloat {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.dataValue {
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: #06b6d4;
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+/* Energy Pulse */
+.energyPulse,
+.energyPulse2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(6, 182, 212, 0.4);
+  animation: energyExpand 3s ease-out infinite;
+  pointer-events: none;
+}
+
+.energyPulse2 {
+  animation-delay: -1.5s;
+}
+
+@keyframes energyExpand {
+  0% {
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .robotContainer {
+    width: 300px;
+    height: 350px;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .robotContainer {
+    width: 250px;
+    height: 300px;
+    transform: scale(0.65);
+  }
+}

@@ -1,0 +1,246 @@
+.orbContainer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Main floating orbs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: orbFloat 20s ease-in-out infinite;
+}
+
+.orbInner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: orbPulse 4s ease-in-out infinite;
+}
+
+.orb1 {
+  width: 600px;
+  height: 600px;
+  top: -20%;
+  left: -10%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.5) 0%, rgba(99, 102, 241, 0) 70%);
+  animation-delay: 0s;
+}
+
+.orb1 .orbInner {
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, transparent 70%);
+}
+
+.orb2 {
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  right: -15%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.4) 0%, rgba(6, 182, 212, 0) 70%);
+  animation-delay: -5s;
+  animation-duration: 25s;
+}
+
+.orb2 .orbInner {
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.3) 0%, transparent 70%);
+}
+
+.orb3 {
+  width: 450px;
+  height: 450px;
+  bottom: -10%;
+  left: 20%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35) 0%, rgba(139, 92, 246, 0) 70%);
+  animation-delay: -10s;
+  animation-duration: 22s;
+}
+
+.orb3 .orbInner {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+}
+
+.orb4 {
+  width: 400px;
+  height: 400px;
+  top: 30%;
+  left: 40%;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.25) 0%, rgba(236, 72, 153, 0) 70%);
+  animation-delay: -7s;
+  animation-duration: 28s;
+}
+
+.orb4 .orbInner {
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.2) 0%, transparent 70%);
+}
+
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(50px, -60px) scale(1.1);
+  }
+  50% {
+    transform: translate(80px, 30px) scale(0.95);
+  }
+  75% {
+    transform: translate(30px, 70px) scale(1.05);
+  }
+}
+
+@keyframes orbPulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* Ambient light spots */
+.lightSpot {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  animation: lightPulse 6s ease-in-out infinite;
+}
+
+.light1 {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  right: 20%;
+  background: rgba(16, 185, 129, 0.3);
+  animation-delay: 0s;
+}
+
+.light2 {
+  width: 250px;
+  height: 250px;
+  bottom: 30%;
+  left: 10%;
+  background: rgba(245, 158, 11, 0.25);
+  animation-delay: -2s;
+}
+
+.light3 {
+  width: 200px;
+  height: 200px;
+  top: 60%;
+  right: 30%;
+  background: rgba(59, 130, 246, 0.3);
+  animation-delay: -4s;
+}
+
+@keyframes lightPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+/* Gradient Mesh Background */
+.gradientMesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(6, 182, 212, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 60% at 40% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 70% 30% at 70% 60%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
+  animation: meshShift 30s ease-in-out infinite;
+}
+
+@keyframes meshShift {
+  0%, 100% {
+    background-position: 0% 0%, 100% 0%, 0% 100%, 100% 100%;
+  }
+  50% {
+    background-position: 100% 100%, 0% 100%, 100% 0%, 0% 0%;
+  }
+}
+
+/* Aurora Effect */
+.aurora {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+.auroraLayer1,
+.auroraLayer2,
+.auroraLayer3 {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(99, 102, 241, 0.1) 60deg,
+    transparent 120deg,
+    rgba(6, 182, 212, 0.08) 180deg,
+    transparent 240deg,
+    rgba(139, 92, 246, 0.1) 300deg,
+    transparent 360deg
+  );
+  animation: auroraRotate 60s linear infinite;
+}
+
+.auroraLayer2 {
+  animation-duration: 80s;
+  animation-direction: reverse;
+  opacity: 0.7;
+  background: conic-gradient(
+    from 120deg,
+    transparent 0deg,
+    rgba(236, 72, 153, 0.08) 60deg,
+    transparent 120deg,
+    rgba(16, 185, 129, 0.06) 180deg,
+    transparent 240deg,
+    rgba(245, 158, 11, 0.08) 300deg,
+    transparent 360deg
+  );
+}
+
+.auroraLayer3 {
+  animation-duration: 100s;
+  opacity: 0.5;
+  background: conic-gradient(
+    from 240deg,
+    transparent 0deg,
+    rgba(59, 130, 246, 0.06) 90deg,
+    transparent 180deg,
+    rgba(168, 85, 247, 0.08) 270deg,
+    transparent 360deg
+  );
+}
+
+@keyframes auroraRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .orb1 { width: 400px; height: 400px; }
+  .orb2 { width: 350px; height: 350px; }
+  .orb3 { width: 300px; height: 300px; }
+  .orb4 { width: 250px; height: 250px; }
+
+  .aurora {
+    opacity: 0.2;
+  }
+}
